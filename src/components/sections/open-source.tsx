@@ -13,10 +13,10 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     name: "Syntrix",
-    tagline: "Open-source project pushing boundaries.",
+    tagline: "Agentic social media lead finder & outreach automation.",
     description:
-      "An open-source project available on GitHub — check it out and contribute.",
-    tags: ["Open Source"],
+      "An AI-powered CLI tool that discovers relevant Twitter/X conversations, scores leads using Claude or GPT, generates context-aware reply drafts, and sends human-approved outreach — all with built-in rate limiting and engagement tracking.",
+    tags: ["Open Source", "Python", "AI/LLM"],
     website: "https://syntrix.app/",
     github: "https://github.com/StrangeStorm243-bit/Syntrix",
   },

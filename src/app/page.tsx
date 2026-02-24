@@ -15,10 +15,10 @@ export default function Home() {
       <main>
         <Hero />
         <AboutBento />
+        <OpenSource />
         <Projects />
         <HowIThink />
         <Experience />
-        <OpenSource />
         <Hackathons />
         <Contact />
       </main>
