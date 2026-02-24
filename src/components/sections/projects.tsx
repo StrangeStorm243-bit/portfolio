@@ -15,10 +15,10 @@ const projects = [
   {
     name: "SalesSense",
     role: "Co-Founder",
-    metric: "15+ founders interviewed before writing code",
+    metric: "60+ founder interviews · 15+ beta users",
     tagline: "Turning customer conversations into founder decisions.",
     description:
-      "Interviewed 15+ founders to map where customer call patterns were costing them deals. Built and shipped demo to 5+ active beta users.",
+      "Interviewed 60+ founders to map where customer call patterns were costing them deals. Built and shipped demo to 15+ active beta users.",
     bullets: [
       "Extracting cross-conversation signal, not single-call summaries",
       "Evidence-backed weekly decision support for founders",

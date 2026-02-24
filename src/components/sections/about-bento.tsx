@@ -21,18 +21,18 @@ The common problem: people trust metrics that feel right instead of digging for 
 
 const stats = [
   {
-    value: "15+",
+    value: "60+",
     label: "Founder Interviews",
-    sublabel: "Before writing a line of code",
+    sublabel: "Deep customer discovery",
   },
   { value: "$600", label: "ARR", sublabel: "Paying users at SitSense" },
   {
-    value: "5+",
+    value: "15+",
     label: "Beta Users",
     sublabel: "Actively using SalesSense",
   },
   {
-    value: "3",
+    value: "4",
     label: "Products Shipped",
     sublabel: "From zero to users",
   },
@@ -43,7 +43,7 @@ const capabilities = [
     icon: Rocket,
     title: "Zero-to-One Builder",
     description:
-      "Vague idea to shipped prototype. 15+ founder interviews before code.",
+      "Vague idea to shipped prototype. 60+ founder interviews and counting.",
   },
   {
     icon: SearchCheck,
