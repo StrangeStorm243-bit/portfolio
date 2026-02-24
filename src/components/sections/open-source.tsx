@@ -62,7 +62,7 @@ export function OpenSource() {
                 <p className="mb-1 text-sm font-medium text-orange-400/70">
                   {project.tagline}
                 </p>
-                <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+                <p className="mb-6 text-sm leading-relaxed text-black">
                   {project.description}
                 </p>
 

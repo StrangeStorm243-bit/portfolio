@@ -172,6 +172,21 @@
   animation: spin-border 3s linear infinite;
 }
 
+/* ── Hackathon card (purple-brown gradient border) ── */
+.hackathon-card {
+  --border-angle: 0deg;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.04)) padding-box,
+    conic-gradient(from var(--border-angle), #9333ea, #7e22ce, #92400e, #b45309, #9333ea) border-box;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.hackathon-card:hover {
+  animation: spin-border 3s linear infinite;
+}
+
 /* Firefox fallback for @property */
 @supports not (background: conic-gradient(red, red)) {
   .gradient-border {

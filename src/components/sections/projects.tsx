@@ -117,7 +117,7 @@ export function Projects() {
                 <p className="mb-1 text-sm font-medium text-cyan-400/70">
                   {project.tagline}
                 </p>
-                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                <p className="mb-4 text-sm leading-relaxed text-black">
                   {project.description}
                 </p>
 
