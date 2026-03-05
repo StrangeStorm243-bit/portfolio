@@ -44,7 +44,7 @@ export function Hackathons() {
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading
           label="Hackathons"
-          title="100% Win Rate"
+          title="2 Wins"
           className="[&_.text-gradient]:!bg-gradient-to-r [&_.text-gradient]:!from-purple-500 [&_.text-gradient]:!via-purple-400 [&_.text-gradient]:!to-amber-700"
         />
 
@@ -52,7 +52,7 @@ export function Hackathons() {
         <div className="mb-12 flex items-center justify-center gap-2">
           <Trophy className="h-5 w-5 text-purple-400" />
           <p className="text-sm font-semibold text-purple-300/80">
-            2 hackathons entered &middot; 2 wins
+            2 wins
           </p>
           <Trophy className="h-5 w-5 text-purple-400" />
         </div>
