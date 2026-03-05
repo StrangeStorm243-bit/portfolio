@@ -17,7 +17,9 @@ const projects = [
     description:
       "Real-time crop intelligence platform that ingests Sentinel-2 L2A satellite imagery at 10m resolution, computes per-pixel NDVI change detection, and clusters stressed vegetation zones via DBSCAN. A FastAPI backend correlates anomalies with live weather telemetry from Open-Meteo, then dispatches GPT-4o-mini for contextual agronomic diagnoses — outputting yield-at-risk economics and optimized scout routes a crew can execute same-day.",
     tags: ["Satellite ML", "NDVI", "FastAPI", "GPT-4o"],
+    badge: "Winner",
     demo: "https://www.loom.com/share/45fb4aeb20e94e518bb7debe64a12103",
+    demoLabel: "Watch Demo",
     github: "https://github.com/cagarwal27/farm-scout",
   },
   {
@@ -26,8 +28,21 @@ const projects = [
     description:
       "Agentic pipeline that takes a prospect list, autonomously scrapes company intelligence via rtrvr.ai, synthesizes personalized scripts through MiniMax M2.5, generates natural voiceover with ElevenLabs Flash v2.5, and composites scene-level visuals into finished outreach videos — all orchestrated as durable Convex workflows with real-time pipeline tracking across 10+ concurrent generations.",
     tags: ["Agentic AI", "Convex", "ElevenLabs", "MiniMax"],
+    badge: "Winner",
     demo: "https://www.loom.com/share/14b0e6c6370f4b428cb0c11b547daf3f",
+    demoLabel: "Watch Demo",
     github: "https://github.com/cagarwal27/aiagent",
+  },
+  {
+    name: "ScreenMind",
+    tagline: "Desktop-aware AI copilot that sees your screen and remembers your work context.",
+    description:
+      "Always-on desktop assistant that captures screenshots in a loop, analyzes each frame with Reka Vision to extract text, UI elements, and context, then builds a persistent knowledge graph in Neo4j — accumulating topics, apps, and relationships over time. Users interact via a floating overlay through text or voice (OpenAI Whisper), with an agent brain (GPT-4o) that fuses live screen context, Tavily web search, and graph memory to answer questions in real time.",
+    tags: ["Reka Vision", "Neo4j", "GPT-4o", "Tavily"],
+    badge: "Participant",
+    demo: "https://x.com/neo_untested/status/2029511388834697221",
+    demoLabel: "Watch Demo",
+    github: "https://github.com/StrangeStorm243-bit/ScreenMind",
   },
 ];
 
@@ -44,7 +59,7 @@ export function Hackathons() {
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading
           label="Hackathons"
-          title="2 Wins"
+          title="Hackathon Projects"
           className="[&_.text-gradient]:!bg-gradient-to-r [&_.text-gradient]:!from-purple-500 [&_.text-gradient]:!via-purple-400 [&_.text-gradient]:!to-amber-700"
         />
 
@@ -52,12 +67,12 @@ export function Hackathons() {
         <div className="mb-12 flex items-center justify-center gap-2">
           <Trophy className="h-5 w-5 text-purple-400" />
           <p className="text-sm font-semibold text-purple-300/80">
-            2 wins
+            2 wins &middot; 3 hackathons
           </p>
           <Trophy className="h-5 w-5 text-purple-400" />
         </div>
 
-        <StaggerGroup className="grid gap-6 md:grid-cols-2">
+        <StaggerGroup className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <FadeInChild key={project.name}>
               <GlassCard className="hackathon-card flex h-full flex-col p-6 sm:p-8">
@@ -65,9 +80,13 @@ export function Hackathons() {
                 <div className="mb-4 flex flex-wrap items-center gap-2">
                   <Badge
                     variant="outline"
-                    className="border-purple-500/30 text-purple-400 text-xs"
+                    className={`text-xs ${
+                      project.badge === "Winner"
+                        ? "border-purple-500/30 text-purple-400"
+                        : "border-amber-500/30 text-amber-400"
+                    }`}
                   >
-                    Winner
+                    {project.badge}
                   </Badge>
                   {project.tags.map((tag) => (
                     <Badge
@@ -101,7 +120,7 @@ export function Hackathons() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Watch Demo
+                      {project.demoLabel}
                       <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   </Button>
